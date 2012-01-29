@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="CDViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="main.png" id="Vw2-Tp-emI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tlh-yq-KJW">
+                                <rect key="frame" x="243" y="272" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSettings:" destination="2" eventType="touchUpInside" id="ueB-9s-zhX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="settingsButton" destination="Tlh-yq-KJW" id="Ouu-fZ-1Kg"/>
+                        <segue destination="LnI-3X-kRD" kind="modal" identifier="Settings" id="Tzl-Ts-UHp"/>
+                    </connections>
+                </viewController>
+            </objects>
+        </scene>
+        <scene sceneID="kj1-SZ-5tG">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0D-9f-JI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="3hz-0z-9oN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e1g-gT-3if">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="settings.png" id="A6N-Qi-ckH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bHD-aV-HCC">
+                                <rect key="frame" x="4" y="13" width="296" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eg4-kB-s9Y" kind="push" id="fsO-QS-Q43"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="9PF-cG-W4l"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1331" y="-57"/>
+        </scene>
+        <scene sceneID="Iqb-mt-vto">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vff-Ti-xJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="LnI-3X-kRD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Z1R-fY-TQy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3hz-0z-9oN" kind="relationship" relationship="rootViewController" id="byI-m2-4Ya"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="805" y="-57"/>
+        </scene>
+        <scene sceneID="5Bt-c0-BL9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZS-Tx-yO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="eg4-kB-s9Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CeZ-e1-Hq3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="accounts.png" id="kTM-Ve-9NZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Accounts" id="WVK-li-kCI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pWR-3q-2sU">
+                            <connections>
+                                <segue destination="amX-Wt-t81" kind="push" id="DGZ-EI-Ybs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1737" y="-57"/>
+        </scene>
+        <scene sceneID="XXx-7X-bUv">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q25-ay-kgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="amX-Wt-t81" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rKV-kG-Axn">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="accountType.png" id="n7L-FW-F0w">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LIi-Ah-Y9D">
+                                <rect key="frame" x="8" y="13" width="297" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3qq-1l-NMY" kind="push" id="AF4-z8-aXF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select Account" id="ock-Vu-RLY"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2106" y="-57"/>
+        </scene>
+        <scene sceneID="NPd-0R-Uqz">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JcQ-2D-yyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="3qq-1l-NMY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g8G-xq-XZJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="accountInfo.png" id="q5y-vu-Quv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Outlook Web Access" id="6he-k4-9Lw"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2559" y="-63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="accountInfo.png" width="320" height="416"/>
+        <image name="accountType.png" width="320" height="416"/>
+        <image name="accounts.png" width="320" height="416"/>
+        <image name="main.png" width="320" height="460"/>
+        <image name="settings.png" width="320" height="416"/>
+    </resources>
+    <classes>
+        <class className="CDViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CDViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="didSelectSettings:"/>
+                <relationship kind="outlet" name="settingsButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
