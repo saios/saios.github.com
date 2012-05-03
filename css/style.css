@@ -7,7 +7,8 @@ body, p {
 }
 
 a {
-  color:rgba(85,189,120,.6);
+  font-weight:bold;
+  color:rgba(255,133,33,.6);
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -15,28 +16,11 @@ a {
 }
 
 a:hover {
-  color:rgba(85,189,120,1);
+  color:rgb(255,133,33);
 }
 
 section img {
   border-radius:4px;
-}
-
-.overlay {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  background:rgba(0,0,0,.8) url("http://f.cl.ly/items/3h3m3x131s2V1S3D2e0p/link.png") no-repeat center center;
-  z-index:1;
-  position:absolute;
-  top:0;
-  left:0;
-  width:300px;
-  height:225px;
-  border-radius:4px;
-  opacity:0;
-  margin-left:20px;
 }
 
 section a {
@@ -46,6 +30,10 @@ section a {
 
 section a:hover .overlay {
   opacity:1;
+}
+
+.invite h1, .invite h2 {
+  color:#000;
 }
 
 .invite {
