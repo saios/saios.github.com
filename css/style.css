@@ -54,11 +54,11 @@ section a:hover .overlay {
 }
 
 .eventbrite {
-  background: rgba(255,133,33,.8);
+  background: rgba(255,133,33,1);
 }
 
 .newsletter {
-  background:rgba(85,189,120,.3);
+  background:rgba(33,133,255,.3);
   padding:40px 0;
   margin-top:80px;
 }
@@ -78,7 +78,7 @@ section a:hover .overlay {
 
 .sign_up {
   margin-left:160px;
-  background:rgba(85,189,120,1);
+  background:rgba(33,133,255,1);
 }
 
 .sign_up:hover, .eventbrite:hover {
